@@ -209,8 +209,7 @@ bulkk_mrna = bulkTransform(pdac_mrna)</code></pre>
 <div id="step-3.-predict-mirna" class="section level2">
 <h2>Step 3. Predict miRNA</h2>
 <p>To predict the miRNAs, <code>miRSCAPE</code> function should be used. The predicted miRNA expressions can be found in <code>pred</code>. The default parameters setting for XGBoost can be used but to change the parameter settings please use the corresponding parameters. <code>bstr</code> parameter is for booster, <code>objt</code> is for objective, <code>mdpth</code> is for maximum depth, <code>ett</code> is for eta, <code>nrnds</code> is for number of rounds, <code>echoIn</code> is for printing each n-th iteration evaluation messages, <code>esr</code> is for early stopping.</p>
-<p>booster = bstr, objective = objt, max.depth = mdpth, eta = ett, nrounds = nrnds, print_every_n = echoIn, early_stop_round = esr</p>
-<pre><code>pred = miRSCAPE(bulkmRNA = bulkk_mrna, bulkmiRNA = bulkk_mirna, scmRNA = denem, nrnds = 20)
+<pre><code>pred = miRSCAPE(bulkmRNA = bulkk_mrna, bulkmiRNA = bulkk_mirna, scmRNA = denem)
 </code></pre>
 </div>
 </div>
